@@ -8,6 +8,10 @@ const T = new Twit({
     access_token_secret:  process.env.ACCESS_TOKEN_SECRET,
 })
 
+T.post('statuses/update', { status: 'Running! ' + Date.now() }, function(err, data, response) {
+  console.log(data)
+})
+
 function sendTweet() {
   T.post('statuses/update', { status: 'Stay hydrated y\'all, drink some water! 💧 ' + Date.now() }, function(err, data, response) {
     console.log(data)
