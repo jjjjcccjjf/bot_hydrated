@@ -1,5 +1,7 @@
 require('dotenv').config()
 
+const tweetHelper = require('./tweetHelper')
+
 const Twit = require('twit')
 const T = new Twit({
     consumer_key:         process.env.CONSUMER_KEY,
@@ -8,12 +10,11 @@ const T = new Twit({
     access_token_secret:  process.env.ACCESS_TOKEN_SECRET,
 })
 
-T.post('statuses/update', { status: 'Running! ' + Date.now() }, function(err, data, response) {
-  console.log(data)
-})
-
 function sendTweet() {
-  T.post('statuses/update', { status: 'Stay hydrated y\'all, drink some water! 💧 ' + Date.now() }, function(err, data, response) {
+
+  let newStatus = tweetHelper.generate();
+
+  T.post('statuses/update', { status: newStatus }, function(err, data, response) {
     console.log(data)
   })
 }
