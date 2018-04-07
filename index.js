@@ -8,13 +8,10 @@ const T = new Twit({
     access_token_secret:  process.env.ACCESS_TOKEN_SECRET,
 })
 
-var users = ["122569945"];
-var stream = T.stream('statuses/filter', {follow: users});
-stream.on('tweet', function (tweet) {
-    if (users.indexOf(tweet.user.id_str) > -1) {
-        console.log(tweet.user.name + ": " + tweet.text);
-        T.post('statuses/retweet/:id', { id: tweet.id_str }, function (err, data, response) {
-            console.log(data)
-        })
-    }
-})
+function sendTweet() {
+  T.post('statuses/update', { status: 'hello world! ' + Date.now() }, function(err, data, response) {
+    console.log(data)
+  })
+}
+
+setInterval(sendTweet, 3*60*1000);
