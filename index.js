@@ -19,6 +19,6 @@ function sendTweet() {
   })
 }
 
-sendTweet();
+sendTweet(); // initial tweet
 
-setInterval(sendTweet, 3*60*1000);
+setInterval(sendTweet, 7200000); // 2 hours
