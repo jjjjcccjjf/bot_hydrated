@@ -16,15 +16,11 @@ function g() {
     'Hm',
     'Hmmm',
     'Hmph',
-    'Bonjour',
     'Hola',
     'Hallo',
     'Guten Tag',
     'Namaste',
     'Ohayou',
-    // 'おはよう',
-    // 'こんにちは',
-    // '안녕하세요',
     'Konnichiwa',
     'Annyeonghaseyo',
     'Hello',
@@ -45,8 +41,7 @@ function g() {
     'Hoy',
     'Greetings',
     'Beep bop',
-    'I am a robot',
-    'Yellow',
+    'Blip bloop',
     'Jello',
     'Eyyyy',
     'Ey',
@@ -67,9 +62,6 @@ function a() {
     'friend',
     'mate',
     'human',
-    'hooman',
-    'handsome',
-    'gorgeous',
     'pal',
     'bro',
     'sis',
@@ -85,10 +77,11 @@ function a() {
     'good buddy',
     'awesome human',
     'bruh',
+    'brah',
     'your majesty',
     'your highness',
-    'Milord',
-    'Lordship',
+    'milord',
+    'lordship',
     'his excellence',
     'her excellence',
     'teacher',
@@ -97,8 +90,6 @@ function a() {
     'Senpai',
     'Sensei',
     'Hero',
-    'Onii-chan',
-    'Onii-sama'
   ]
 
   return arr[Math.floor(Math.random() * arr.length)];
@@ -122,7 +113,7 @@ function b() {
     'Hmmm... It would be nice if you would drink some water right now',
     'Would you be kind enough to drink some water right now',
     'Hydrate yourself ' + a(),
-    'Eat something juicy',
+    'Drink or eat something juicy',
     'Drink water',
     'When will you drink water',
     'Water drinking time',
@@ -155,6 +146,10 @@ function b() {
     'Drink water again',
     'IT\'S TIME TO D-D-D-DRINK WATER',
     'Chug some liquid',
+    'This is the best time to drink water',
+    'This is the best place to drink water',
+    'This is the best time and place to drink water',
+    'Not the worst timing to drink water right, ' + a()
   ]
 
   return arr[Math.floor(Math.random() * arr.length)];
@@ -210,9 +205,6 @@ function t() {
     '〜',
     '.',
     '。',
-    '..',
-    // '!!',
-    // '！！'
   ]
 
   return arr[Math.floor(Math.random() * arr.length)];
@@ -226,16 +218,7 @@ function t() {
 function q() {
   const arr = [
     "?",
-    "❔",
-    "⁉❓❔",
-    "❓",
-    "❔",
-    "??",
     "？",
-    "?!",
-    "!?",
-    "⁇",
-    "‽",
     "!",
     '！',
   ]
