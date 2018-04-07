@@ -19,4 +19,6 @@ function sendTweet() {
   })
 }
 
+sendTweet();
+
 setInterval(sendTweet, 3*60*1000);
