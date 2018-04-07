@@ -9,7 +9,7 @@ const T = new Twit({
 })
 
 function sendTweet() {
-  T.post('statuses/update', { status: 'hello world! ' + Date.now() }, function(err, data, response) {
+  T.post('statuses/update', { status: 'Stay hydrated y\'all, drink some water! 💧 ' + Date.now() }, function(err, data, response) {
     console.log(data)
   })
 }
