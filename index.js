@@ -2,8 +2,8 @@ require('dotenv').config()
 
 const tweetHelper = require('./tweetHelper')
 
-const Twit = require(‘twit’);
-const TwitterBot = require(‘node-twitterbot’).TwitterBot;
+const Twit = require('twit');
+const TwitterBot = require('node-twitterbot').TwitterBot;
 
 const Bot = new TwitterBot({
  consumer_key: process.env.CONSUMER_KEY,
